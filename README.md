@@ -42,6 +42,7 @@ We have included separate scripts for each of the environments in the paper. Use
 
 ## Common Issues
 **numpy.ndarray size changed, may indicate binary incompatibility. Expected 88 from C header, got 80 from PyObject**
+
 Uninstall and reinstall numpy:
 ```
 pip uninstall numpy
@@ -49,6 +50,7 @@ pip install numpy
 ```
 
 **TypeError: __init__() got an unexpected keyword argument 'tags'**
+
 Install an earlier gym version: 
 ```
 pip install gym==0.15.4
