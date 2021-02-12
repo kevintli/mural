@@ -6,9 +6,10 @@ Anonymous code submission for MURAL: Meta-Learning Uncertainty-Aware Rewards for
 ## Setup Instructions
 0. Clone the repository
 
-1. Create a conda environment with the required dependencies:
+1. Create a conda environment with the required dependencies, and activate it (2 commands):
 ```
 conda env create -f environment.yml
+conda activate mural
 ```
 
 2. Add the necessary paths (2 commands):
@@ -36,6 +37,7 @@ We have included separate scripts for each of the environments in the paper. Use
 * **Sawyer Pick-and-Place**: `./scripts/examples/run_sawyer_pick.sh`
 * **Sawyer Door**: `./scripts/examples/run_sawyer_door.sh`
 * **Ant Locomotion**: `./scripts/examples/run_ant_maze.sh`
+* **Dexterous Hand**: Unfortunately, the code for the Dexterous Hand environment is private and we have been asked not to include it in this submission for the time being.
 
 
 ## Common Issues
@@ -56,3 +58,9 @@ pip install gym==0.15.4
 ```
 pip install aiohttp psutil
 ```
+
+## Acknowledgements
+This codebase was built off of the following publicly available repos:
+* **softlearning** (implementation of SAC and other common RL algorithms): https://github.com/rail-berkeley/softlearning
+* **multiworld** (multitask gym environments for RL): https://github.com/vitchyr/multiworld
+* **pytorch-maml** (implementation of Model-Agnostic Meta-Learning): https://github.com/tristandeleu/pytorch-maml
