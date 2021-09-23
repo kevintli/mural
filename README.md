@@ -1,7 +1,14 @@
-# mural
-Anonymous code submission for MURAL: Meta-Learning Uncertainty-Aware Rewards for Outcome-Driven Reinforcement Learning
+# MURAL
+Official code for MURAL: Meta-Learning Uncertainty-Aware Rewards for Outcome-Driven RL (ICML 2021)
 
-**Website:** [sites.google.com/view/mural-rl](https://sites.google.com/view/mural-rl)
+**MURAL: Meta-Learning Uncertainty-Aware Rewards for Outcome-Driven Reinforcement Learning**\
+Kevin Li*, Abhishek Gupta*, Ashwin D Reddy, Vitchyr Pong, Aurick Zhou, Justin Yu, Sergey Levine\
+_International Conference on Machine Learning (ICML) 2021_
+
+[Website](sites.google.com/view/mural-rl) | [Paper](https://arxiv.org/abs/2107.07184) 
+
+<img src="https://user-images.githubusercontent.com/6785060/134468427-0d9881df-1cd1-48e3-83d0-7d01a7325bbf.png" data-canonical-src="https://user-images.githubusercontent.com/6785060/134468427-0d9881df-1cd1-48e3-83d0-7d01a7325bbf.png" width="700" />
+
 
 ## Setup Instructions
 0. Clone the repository
