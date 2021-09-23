@@ -9,6 +9,20 @@ _International Conference on Machine Learning (ICML) 2021_
 
 <img src="https://user-images.githubusercontent.com/6785060/134468427-0d9881df-1cd1-48e3-83d0-7d01a7325bbf.png" data-canonical-src="https://user-images.githubusercontent.com/6785060/134468427-0d9881df-1cd1-48e3-83d0-7d01a7325bbf.png" width="700" />
 
+## Code Structure
+The original codebase was based off of standard implementations of Soft Actor-Critic ([softlearning](https://github.com/rail-berkeley/softlearning)) and Model-Agnostic Meta-Learning ([pytorch-maml-rl](https://github.com/tristandeleu/pytorch-maml-rl)).
+
+Below are the main additions that are relevant to MURAL:
+
+- `meta-nml/`: Implementation of Meta-NML, an amortized version of Normalized Maximum Likelihood for deep neural networks using meta-learning.
+    - `meta-nml/maml/meta_nml.py`: Core Meta-NML algorithm
+    - `meta-nml/maml/metadatasets/nml.py`: The NML dataset. Given a standard classification dataset with _n_ inputs and labels (for _k_ classes), this will construct a meta-dataset of _n*k_ tasks, each of which involves adapting to one of the input points with an arbitrary label in _1, ..., k_.
+- `softlearning/`: Library of RL algorithms
+    - `softlearning/algorithms/vice.py`: Implementation of MURAL, a classifier RL algorithm that uses Meta-NML for uncertainty-aware rewards
+- `examples/`: Example setups for the environments in our paper
+    - `examples/*/variants.py`: Hyperparameter and environment settings for each task
+- `scripts/examples/*`: Scripts to run MURAL on various environments
+
 
 ## Setup Instructions
 0. Clone the repository
